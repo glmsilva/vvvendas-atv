@@ -19,10 +19,7 @@ namespace Etec.ProjetoVVVendas.UI
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            Dashboard dashboard = new Dashboard();
-            dashboard.Show();
-
+            DTO.Cliente cliente = new DTO.Cliente();
         }
     }
 }
