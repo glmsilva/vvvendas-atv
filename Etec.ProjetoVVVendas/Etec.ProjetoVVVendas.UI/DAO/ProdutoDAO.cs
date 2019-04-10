@@ -17,7 +17,7 @@ namespace Etec.ProjetoVVVendas.UI.DAO
 
         public ProdutoDAO()
         {
-            _conexaoMysql = "server=localhost;user id=root;password='';database=db_sistema_vendas";
+            _conexaoMysql = "server=localhost;user id=root;password='';database=db_vendas";
 
         }
 

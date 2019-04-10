@@ -31,14 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_UI));
             this.btnEntrar = new System.Windows.Forms.Button();
             this.lblLogin = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtLogin = new System.Windows.Forms.TextBox();
             this.lblSenha = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.lblCadastro = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rdoGerente = new System.Windows.Forms.RadioButton();
+            this.rdoFunc = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnEntrar
@@ -57,63 +60,56 @@
             // lblLogin
             // 
             this.lblLogin.AutoSize = true;
-            this.lblLogin.Location = new System.Drawing.Point(12, 203);
+            this.lblLogin.Location = new System.Drawing.Point(14, 75);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(53, 19);
             this.lblLogin.TabIndex = 1;
             this.lblLogin.Text = "Login:";
             // 
-            // textBox1
+            // txtLogin
             // 
-            this.textBox1.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(84, 203);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 23);
-            this.textBox1.TabIndex = 2;
+            this.txtLogin.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLogin.Location = new System.Drawing.Point(86, 75);
+            this.txtLogin.Name = "txtLogin";
+            this.txtLogin.Size = new System.Drawing.Size(153, 23);
+            this.txtLogin.TabIndex = 2;
             // 
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(12, 245);
+            this.lblSenha.Location = new System.Drawing.Point(14, 117);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(58, 19);
             this.lblSenha.TabIndex = 3;
             this.lblSenha.Text = "Senha:";
             // 
-            // textBox2
+            // txtSenha
             // 
-            this.textBox2.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(84, 241);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(153, 23);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.txtSenha.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha.Location = new System.Drawing.Point(86, 113);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(153, 23);
+            this.txtSenha.TabIndex = 4;
+            this.txtSenha.UseSystemPasswordChar = true;
             // 
-            // label3
+            // lblCadastro
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(112, 310);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 15);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Cadastrar";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(79, 295);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 15);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Esqueci minha senha";
+            this.lblCadastro.AutoSize = true;
+            this.lblCadastro.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadastro.Location = new System.Drawing.Point(76, 336);
+            this.lblCadastro.Name = "lblCadastro";
+            this.lblCadastro.Size = new System.Drawing.Size(137, 15);
+            this.lblCadastro.TabIndex = 6;
+            this.lblCadastro.Text = "Cadastrar novo usuário";
+            this.lblCadastro.Click += new System.EventHandler(this.lblCadastro_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(107, 61);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(72, 14);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 77);
+            this.pictureBox1.Size = new System.Drawing.Size(148, 126);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -128,21 +124,56 @@
             this.panel1.Size = new System.Drawing.Size(152, 458);
             this.panel1.TabIndex = 8;
             // 
+            // rdoGerente
+            // 
+            this.rdoGerente.AutoSize = true;
+            this.rdoGerente.Location = new System.Drawing.Point(18, 36);
+            this.rdoGerente.Name = "rdoGerente";
+            this.rdoGerente.Size = new System.Drawing.Size(81, 23);
+            this.rdoGerente.TabIndex = 9;
+            this.rdoGerente.TabStop = true;
+            this.rdoGerente.Text = "Gerente";
+            this.rdoGerente.UseVisualStyleBackColor = true;
+            this.rdoGerente.CheckedChanged += new System.EventHandler(this.rdoGerente_CheckedChanged);
+            // 
+            // rdoFunc
+            // 
+            this.rdoFunc.AutoSize = true;
+            this.rdoFunc.Location = new System.Drawing.Point(143, 36);
+            this.rdoFunc.Name = "rdoFunc";
+            this.rdoFunc.Size = new System.Drawing.Size(111, 23);
+            this.rdoFunc.TabIndex = 10;
+            this.rdoFunc.TabStop = true;
+            this.rdoFunc.Text = "Funcionário";
+            this.rdoFunc.UseVisualStyleBackColor = true;
+            this.rdoFunc.CheckedChanged += new System.EventHandler(this.rdoFunc_CheckedChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rdoFunc);
+            this.groupBox1.Controls.Add(this.lblSenha);
+            this.groupBox1.Controls.Add(this.rdoGerente);
+            this.groupBox1.Controls.Add(this.txtSenha);
+            this.groupBox1.Controls.Add(this.txtLogin);
+            this.groupBox1.Controls.Add(this.lblLogin);
+            this.groupBox1.Location = new System.Drawing.Point(12, 158);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(264, 160);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Login";
+            // 
             // Login_UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(434, 458);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.lblSenha);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblCadastro);
             this.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -150,6 +181,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,13 +192,15 @@
 
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Label lblLogin;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtLogin;
         private System.Windows.Forms.Label lblSenha;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.Label lblCadastro;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RadioButton rdoGerente;
+        private System.Windows.Forms.RadioButton rdoFunc;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

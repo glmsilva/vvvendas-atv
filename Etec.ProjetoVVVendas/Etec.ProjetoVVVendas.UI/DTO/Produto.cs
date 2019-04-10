@@ -12,9 +12,9 @@ namespace Etec.ProjetoVVVendas.UI.DTO
         string _nome;
         string _descricao;
         string _imgProd;
-        int quantidade;
+        int _quantidade;
         float _preco;
-        int _codFornecedor;
+       
 
         public int ID
         {
@@ -52,10 +52,6 @@ namespace Etec.ProjetoVVVendas.UI.DTO
             set { _preco = value; }
         }
 
-        public int CodFornecedor
-        {
-            get { return _codFornecedor; }
-            set { _codFornecedor = value; }
-        }
+        
     }
 }

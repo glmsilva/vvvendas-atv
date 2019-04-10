@@ -49,11 +49,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\LoginBLL.cs" />
     <Compile Include="BLL\ProdutoBLL.cs" />
     <Compile Include="DAO\ClienteDAO.cs" />
+    <Compile Include="DAO\LoginDAO.cs" />
     <Compile Include="DAO\ProdutoDAO.cs" />
     <Compile Include="DTO\Cliente.cs" />
     <Compile Include="DTO\Produto.cs" />
+    <Compile Include="UI\CadastroLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CadastroLogin.Designer.cs">
+      <DependentUpon>CadastroLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +77,9 @@
     <Compile Include="DTO\Login.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UI\CadastroLogin.resx">
+      <DependentUpon>CadastroLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
