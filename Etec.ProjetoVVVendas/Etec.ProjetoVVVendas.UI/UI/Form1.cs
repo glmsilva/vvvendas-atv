@@ -51,13 +51,20 @@ namespace Etec.ProjetoVVVendas.UI
                 {
                     MessageBox.Show("Você digitou um Login ou Senha invalido");
                 }
+                else if(Funcao == "Gerente")
+                {
+
+                    Dashboard painelGerente = new Dashboard();
+                    this.Hide();
+                    painelGerente.Show();
+
+                }
                 else
                 {
-                    Dashboard painel = new Dashboard();
+
+                    UI.DashboardFunc painel = new UI.DashboardFunc();
                     this.Hide();
                     painel.Show();
-
-
                 }
             }
             catch (Exception erro)

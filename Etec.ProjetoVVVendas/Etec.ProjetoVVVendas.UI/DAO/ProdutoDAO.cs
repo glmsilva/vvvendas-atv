@@ -38,7 +38,7 @@ namespace Etec.ProjetoVVVendas.UI.DAO
                             {
                                 Produto produto = new Produto();
                                 produto.ID = (int)dr["id"];
-                                produto.Nome = (String)dr["Nome"];
+                               // produto.Nome = (String)dr["Nome"];
                                 produto.Preco = (float)(dr["Preco"]);
                                 listaProdutos.Add(produto);
                             }
@@ -53,7 +53,7 @@ namespace Etec.ProjetoVVVendas.UI.DAO
             }
         }
 
-        public Produto SelectProdutoByID(int id)
+     /*   public Produto SelectProdutoByID(int id)
         {
             try
             {
@@ -90,7 +90,7 @@ namespace Etec.ProjetoVVVendas.UI.DAO
                 throw erro;
             }
         }
-
+        */
         public DataTable SelectProduto()
         {
             try
@@ -111,15 +111,20 @@ namespace Etec.ProjetoVVVendas.UI.DAO
             }
         }
 
-        public void insertProduto(Produto produto)
+        public void insertEntrada(Produto produto)
         {
             try
             {
-                String sql = "INSERT INTO Estoque (nome,preco) VALUES (@nome,@preco)";
+                String sql = "INSERT INTO tb_entrada_produto (id_produto,qtde,valor_unitario, data_entrada, foto, descricao) VALUES (@id,@qtde,@valor,@data,@foto,@desc)";
                 conection = new MySqlConnection(_conexaoMysql);
                 MySqlCommand cmd = new MySqlCommand(sql, conection);
-                cmd.Parameters.AddWithValue("@nome", produto.Nome);
-                cmd.Parameters.AddWithValue("@preco", produto.Preco);
+                cmd.Parameters.AddWithValue("@id", produto.ID);
+                cmd.Parameters.AddWithValue("@qtde", produto.Quantidade);
+                cmd.Parameters.AddWithValue("@valor", produto.Preco);
+                cmd.Parameters.AddWithValue("@data", produto.Data);
+                cmd.Parameters.AddWithValue("@foto", produto.Imagem);
+                cmd.Parameters.AddWithValue("@desc", produto.Descricao);
+
                 conection.Open();
                 cmd.ExecuteNonQuery();
             }
@@ -133,7 +138,9 @@ namespace Etec.ProjetoVVVendas.UI.DAO
             }
         }
 
-        public void updateProduto(Produto produto)
+       
+
+      /*  public void updateProduto(Produto produto)
         {
             try
             {
@@ -177,7 +184,7 @@ namespace Etec.ProjetoVVVendas.UI.DAO
             }
         }
 
-
+    */
 
 
     }

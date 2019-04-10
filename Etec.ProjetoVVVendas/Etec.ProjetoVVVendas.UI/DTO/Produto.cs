@@ -9,9 +9,9 @@ namespace Etec.ProjetoVVVendas.UI.DTO
     public class Produto
     {
         int _id;
-        string _nome;
+        DateTime _data;
         string _descricao;
-        string _imgProd;
+        byte[] _imgProd;
         int _quantidade;
         float _preco;
        
@@ -22,10 +22,10 @@ namespace Etec.ProjetoVVVendas.UI.DTO
             set { _id = value; }
         }
 
-        public string Nome
+        public DateTime Data
         {
-            get { return _nome; }
-            set { _nome = value; }
+            get { return _data; }
+            set { _data = value; }
         }
 
         public string Descricao
@@ -34,7 +34,7 @@ namespace Etec.ProjetoVVVendas.UI.DTO
             set { _descricao = value; }
         }
 
-        public string Imagem
+        public byte[] Imagem
         {
             get { return _imgProd; }
             set { _imgProd = value; }

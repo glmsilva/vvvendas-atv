@@ -8,19 +8,13 @@ namespace Etec.ProjetoVVVendas.UI.DTO
 {
     public class Cliente
     {
-        int _id;
+        
         string _cpf;
         string _nome;
         string _endereco;
         string _email;
 
-        public int ID
-        {
-
-            get { return _id; }
-
-            set { _id = value; }
-        }
+       
 
         public string CPF
         {

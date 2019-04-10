@@ -33,13 +33,13 @@ namespace Etec.ProjetoVVVendas.UI.BLL
             return dt;
         }
 
-        public void NovoProduto(Produto prod)
+        public void NovoProdutoEntrada(Produto prod)
         {
              
             try
             {
                 produto = new DAO.ProdutoDAO();
-                produto.insertProduto(prod);
+                produto.insertEntrada(prod);
                 
             }
             catch(Exception erro)
@@ -53,7 +53,7 @@ namespace Etec.ProjetoVVVendas.UI.BLL
             try
             {
                 produto = new DAO.ProdutoDAO();
-                produto.updateProduto(prod);
+                //produto.updateProduto(prod);
             }
             catch(Exception erro)
             {
@@ -67,7 +67,7 @@ namespace Etec.ProjetoVVVendas.UI.BLL
             try
             {
                 produto = new DAO.ProdutoDAO();
-                produto.deleteProduto(prod);
+                //produto.deleteProduto(prod);
             }
             catch(Exception erro)
             {
@@ -89,7 +89,7 @@ namespace Etec.ProjetoVVVendas.UI.BLL
             
         }
 
-        public Produto listaProdutoPorID(int id)
+        /*public Produto listaProdutoPorID(int id)
 
         {
 
@@ -98,7 +98,7 @@ namespace Etec.ProjetoVVVendas.UI.BLL
 
                 produto = new DAO.ProdutoDAO();
 
-                return produto.SelectProdutoByID(id);
+                //return produto.SelectProdutoByID(id);
 
             }
             catch (Exception ex)
@@ -108,7 +108,7 @@ namespace Etec.ProjetoVVVendas.UI.BLL
 
             }
 
-        }
+        }*/
 
     }
 }
