@@ -93,5 +93,10 @@ namespace Etec.ProjetoVVVendas.UI
         {
             Funcao = "Funcionário";
         }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -14,6 +14,7 @@ namespace Etec.ProjetoVVVendas.UI.DTO
         byte[] _imgProd;
         int _quantidade;
         float _preco;
+        float _valorTotal;
        
 
         public int ID
@@ -50,6 +51,18 @@ namespace Etec.ProjetoVVVendas.UI.DTO
         {
             get { return _preco; }
             set { _preco = value; }
+        }
+
+        public float Total
+        {
+            get
+            {
+                return _valorTotal;
+            }
+            set
+            {
+                _valorTotal = value;
+            }
         }
 
         

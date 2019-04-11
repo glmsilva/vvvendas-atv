@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Etec.ProjetoVVVendas.UI.DAO;
 using Etec.ProjetoVVVendas.UI.DTO;
 
@@ -40,11 +41,27 @@ namespace Etec.ProjetoVVVendas.UI.BLL
             {
                 produto = new DAO.ProdutoDAO();
                 produto.insertEntrada(prod);
+                MessageBox.Show("Cadastrado com sucesso");
                 
             }
             catch(Exception erro)
             {
 
+            }
+        }
+
+        public void NovoProdutoSaida(Produto prod)
+        {
+            try
+            {
+                produto = new ProdutoDAO();
+                produto.insertSaida(prod);
+                MessageBox.Show("Cadastrado com sucesso");
+            }
+            catch(Exception erro)
+            {
+                MessageBox.Show("Não foi possivel realizar o cadastro.");
+                MessageBox.Show("Erro:" + erro);
             }
         }
 
@@ -89,26 +106,7 @@ namespace Etec.ProjetoVVVendas.UI.BLL
             
         }
 
-        /*public Produto listaProdutoPorID(int id)
-
-        {
-
-            try
-            {
-
-                produto = new DAO.ProdutoDAO();
-
-                //return produto.SelectProdutoByID(id);
-
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-
-            }
-
-        }*/
+       
 
     }
 }

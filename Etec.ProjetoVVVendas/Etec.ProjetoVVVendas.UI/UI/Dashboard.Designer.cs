@@ -31,17 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnProduto = new System.Windows.Forms.Button();
+            this.pnlLateral = new System.Windows.Forms.Panel();
             this.btnOcorrencia = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnCadastro = new System.Windows.Forms.Button();
-            this.btnProduto = new System.Windows.Forms.Button();
             this.btnVendas = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnlLateral = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.ocorrenciaUI1 = new Etec.ProjetoVVVendas.UI.UI.OcorrenciaUI();
             this.produtosUI1 = new Etec.ProjetoVVVendas.UI.UI.ProdutosUI();
             this.cadastro1 = new Etec.ProjetoVVVendas.UI.UI.Cadastro();
+            this.relatorioUI1 = new Etec.ProjetoVVVendas.UI.UI.RelatorioUI();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -69,6 +71,29 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(247, 658);
             this.panel1.TabIndex = 3;
+            // 
+            // btnProduto
+            // 
+            this.btnProduto.FlatAppearance.BorderSize = 0;
+            this.btnProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProduto.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProduto.ForeColor = System.Drawing.Color.White;
+            this.btnProduto.Location = new System.Drawing.Point(12, 146);
+            this.btnProduto.Name = "btnProduto";
+            this.btnProduto.Size = new System.Drawing.Size(235, 88);
+            this.btnProduto.TabIndex = 5;
+            this.btnProduto.Text = "Produtos";
+            this.btnProduto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProduto.UseVisualStyleBackColor = true;
+            this.btnProduto.Click += new System.EventHandler(this.btnProduto_Click);
+            // 
+            // pnlLateral
+            // 
+            this.pnlLateral.BackColor = System.Drawing.Color.White;
+            this.pnlLateral.Location = new System.Drawing.Point(3, 146);
+            this.pnlLateral.Name = "pnlLateral";
+            this.pnlLateral.Size = new System.Drawing.Size(10, 90);
+            this.pnlLateral.TabIndex = 20;
             // 
             // btnOcorrencia
             // 
@@ -98,6 +123,7 @@
             this.button4.Text = "Relatórios";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnCadastro
             // 
@@ -113,21 +139,6 @@
             this.btnCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadastro.UseVisualStyleBackColor = true;
             this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
-            // 
-            // btnProduto
-            // 
-            this.btnProduto.FlatAppearance.BorderSize = 0;
-            this.btnProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProduto.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProduto.ForeColor = System.Drawing.Color.White;
-            this.btnProduto.Location = new System.Drawing.Point(12, 146);
-            this.btnProduto.Name = "btnProduto";
-            this.btnProduto.Size = new System.Drawing.Size(235, 88);
-            this.btnProduto.TabIndex = 5;
-            this.btnProduto.Text = "Produtos";
-            this.btnProduto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProduto.UseVisualStyleBackColor = true;
-            this.btnProduto.Click += new System.EventHandler(this.btnProduto_Click);
             // 
             // btnVendas
             // 
@@ -154,14 +165,6 @@
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
-            // pnlLateral
-            // 
-            this.pnlLateral.BackColor = System.Drawing.Color.White;
-            this.pnlLateral.Location = new System.Drawing.Point(3, 135);
-            this.pnlLateral.Name = "pnlLateral";
-            this.pnlLateral.Size = new System.Drawing.Size(10, 90);
-            this.pnlLateral.TabIndex = 20;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(129)))), ((int)(((byte)(207)))));
@@ -185,14 +188,24 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // ocorrenciaUI1
+            // 
+            this.ocorrenciaUI1.BackColor = System.Drawing.Color.White;
+            this.ocorrenciaUI1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.ocorrenciaUI1.Location = new System.Drawing.Point(298, 84);
+            this.ocorrenciaUI1.Margin = new System.Windows.Forms.Padding(4);
+            this.ocorrenciaUI1.Name = "ocorrenciaUI1";
+            this.ocorrenciaUI1.Size = new System.Drawing.Size(889, 498);
+            this.ocorrenciaUI1.TabIndex = 23;
+            // 
             // produtosUI1
             // 
             this.produtosUI1.BackColor = System.Drawing.Color.White;
             this.produtosUI1.Font = new System.Drawing.Font("Roboto", 12F);
-            this.produtosUI1.Location = new System.Drawing.Point(344, 87);
+            this.produtosUI1.Location = new System.Drawing.Point(298, 84);
             this.produtosUI1.Margin = new System.Windows.Forms.Padding(4);
             this.produtosUI1.Name = "produtosUI1";
-            this.produtosUI1.Size = new System.Drawing.Size(769, 503);
+            this.produtosUI1.Size = new System.Drawing.Size(830, 503);
             this.produtosUI1.TabIndex = 21;
             // 
             // cadastro1
@@ -205,18 +218,30 @@
             this.cadastro1.Size = new System.Drawing.Size(843, 527);
             this.cadastro1.TabIndex = 22;
             // 
+            // relatorioUI1
+            // 
+            this.relatorioUI1.BackColor = System.Drawing.Color.White;
+            this.relatorioUI1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.relatorioUI1.Location = new System.Drawing.Point(295, 87);
+            this.relatorioUI1.Margin = new System.Windows.Forms.Padding(4);
+            this.relatorioUI1.Name = "relatorioUI1";
+            this.relatorioUI1.Size = new System.Drawing.Size(781, 478);
+            this.relatorioUI1.TabIndex = 24;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1200, 658);
-            this.Controls.Add(this.produtosUI1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.produtosUI1);
             this.Controls.Add(this.cadastro1);
+            this.Controls.Add(this.ocorrenciaUI1);
+            this.Controls.Add(this.relatorioUI1);
             this.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -244,5 +269,7 @@
         private System.Windows.Forms.Button button1;
         private UI.ProdutosUI produtosUI1;
         private UI.Cadastro cadastro1;
+        private UI.OcorrenciaUI ocorrenciaUI1;
+        private UI.RelatorioUI relatorioUI1;
     }
 }

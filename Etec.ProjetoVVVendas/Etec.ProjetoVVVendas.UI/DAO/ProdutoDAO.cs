@@ -138,53 +138,36 @@ namespace Etec.ProjetoVVVendas.UI.DAO
             }
         }
 
+        public void insertSaida(Produto produto)
+        {
+            try
+            {
+                string query = "Insert into tb_saida_produto(id_produto, qtde, data_saida, valor_unitario,valor_total) values (@id,@qtde, @data, @valor,@total)";
+                conection = new MySqlConnection(_conexaoMysql);
+
+                MySqlCommand cmd = new MySqlCommand(query, conection);
+                
+                cmd.Parameters.AddWithValue("@id", produto.ID);
+                cmd.Parameters.AddWithValue("@qtde", produto.Quantidade);
+                cmd.Parameters.AddWithValue("@data", produto.Data);
+                cmd.Parameters.AddWithValue("@valor", produto.Preco);
+                cmd.Parameters.AddWithValue("@total", produto.Total);
+
+                conection.Open();
+                cmd.ExecuteNonQuery();
+
+            }catch(Exception erro)
+            {
+                throw erro;
+            }
+            finally
+            {
+                conection.Close();
+            }
+        }
        
 
-      /*  public void updateProduto(Produto produto)
-        {
-            try
-            {
-                String query = "UPDATE Estoque SET nome= @nome ,preco=@preco WHERE id = @id ";
-                conection = new MySqlConnection(_conexaoMysql);
-                MySqlCommand cmd = new MySqlCommand(query, conection);
-                cmd.Parameters.AddWithValue("@id", produto.ID);
-                cmd.Parameters.AddWithValue("@nome", produto.Nome);
-                cmd.Parameters.AddWithValue("@preco", produto.Preco);
-                conection.Open();
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                conection.Close();
-            }
-        }
 
-        public void deleteProduto(Produto produto)
-        {
-            try
-            {
-                String sql = "DELETE FROM Estoque WHERE id = @id ";
-                MySqlConnection conection = new MySqlConnection(_conexaoMysql);
-                MySqlCommand cmd = new MySqlCommand(sql, conection);
-                cmd.Parameters.AddWithValue("@id", produto.ID);
-                conection.Open();
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                conection.Close();
-            }
-        }
-
-    */
 
 
     }
