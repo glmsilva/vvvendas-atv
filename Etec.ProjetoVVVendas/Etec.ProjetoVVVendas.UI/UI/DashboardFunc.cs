@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Etec.ProjetoVVVendas.UI.UI;
 
 namespace Etec.ProjetoVVVendas.UI.UI
 {
@@ -60,7 +61,10 @@ namespace Etec.ProjetoVVVendas.UI.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Login_UI login = new Login_UI();
+            login.Show();
             Close();
+            
         }
     }
 }
