@@ -76,7 +76,7 @@
             // 
             this.btnProduto.FlatAppearance.BorderSize = 0;
             this.btnProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProduto.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProduto.ForeColor = System.Drawing.Color.White;
             this.btnProduto.Location = new System.Drawing.Point(12, 146);
             this.btnProduto.Name = "btnProduto";
@@ -99,7 +99,7 @@
             // 
             this.btnOcorrencia.FlatAppearance.BorderSize = 0;
             this.btnOcorrencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOcorrencia.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOcorrencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOcorrencia.ForeColor = System.Drawing.Color.White;
             this.btnOcorrencia.Location = new System.Drawing.Point(12, 431);
             this.btnOcorrencia.Name = "btnOcorrencia";
@@ -114,7 +114,7 @@
             // 
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(9, 337);
             this.button4.Name = "button4";
@@ -129,7 +129,7 @@
             // 
             this.btnCadastro.FlatAppearance.BorderSize = 0;
             this.btnCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastro.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastro.ForeColor = System.Drawing.Color.White;
             this.btnCadastro.Location = new System.Drawing.Point(6, 243);
             this.btnCadastro.Name = "btnCadastro";
@@ -144,7 +144,7 @@
             // 
             this.btnVendas.FlatAppearance.BorderSize = 0;
             this.btnVendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVendas.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVendas.ForeColor = System.Drawing.Color.White;
             this.btnVendas.Location = new System.Drawing.Point(12, 52);
             this.btnVendas.Name = "btnVendas";
@@ -191,7 +191,7 @@
             // ocorrenciaUI1
             // 
             this.ocorrenciaUI1.BackColor = System.Drawing.Color.White;
-            this.ocorrenciaUI1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.ocorrenciaUI1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.ocorrenciaUI1.Location = new System.Drawing.Point(298, 84);
             this.ocorrenciaUI1.Margin = new System.Windows.Forms.Padding(4);
             this.ocorrenciaUI1.Name = "ocorrenciaUI1";
@@ -201,7 +201,7 @@
             // produtosUI1
             // 
             this.produtosUI1.BackColor = System.Drawing.Color.White;
-            this.produtosUI1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.produtosUI1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.produtosUI1.Location = new System.Drawing.Point(298, 84);
             this.produtosUI1.Margin = new System.Windows.Forms.Padding(4);
             this.produtosUI1.Name = "produtosUI1";
@@ -211,7 +211,7 @@
             // cadastro1
             // 
             this.cadastro1.BackColor = System.Drawing.Color.White;
-            this.cadastro1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.cadastro1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cadastro1.Location = new System.Drawing.Point(344, 87);
             this.cadastro1.Margin = new System.Windows.Forms.Padding(4);
             this.cadastro1.Name = "cadastro1";
@@ -221,7 +221,7 @@
             // relatorioUI1
             // 
             this.relatorioUI1.BackColor = System.Drawing.Color.White;
-            this.relatorioUI1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.relatorioUI1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.relatorioUI1.Location = new System.Drawing.Point(295, 87);
             this.relatorioUI1.Margin = new System.Windows.Forms.Padding(4);
             this.relatorioUI1.Name = "relatorioUI1";
@@ -230,7 +230,7 @@
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1200, 658);
@@ -238,11 +238,11 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.produtosUI1);
-            this.Controls.Add(this.cadastro1);
             this.Controls.Add(this.ocorrenciaUI1);
             this.Controls.Add(this.relatorioUI1);
-            this.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Controls.Add(this.produtosUI1);
+            this.Controls.Add(this.cadastro1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Dashboard";

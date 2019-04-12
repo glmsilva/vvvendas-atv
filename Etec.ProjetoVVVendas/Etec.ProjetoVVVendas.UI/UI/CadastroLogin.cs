@@ -30,8 +30,16 @@ namespace Etec.ProjetoVVVendas.UI.UI
             novoLogin.login = txtLogin.Text;
             novoLogin.senha = txtSenha.Text;
             novoLogin.funcao = Funcao;
-
-            cadastroLogin.cadastrarLogin(novoLogin);
+            try
+            {
+                cadastroLogin.cadastrarLogin(novoLogin);
+                MessageBox.Show("Cadastrado com sucesso");
+            }
+            catch(Exception erro)
+            {
+                MessageBox.Show("Não foi possível conectar com o banco de dados. Erro: " + erro);
+            }
+            
         }
 
         private void CadastroLogin_Load(object sender, EventArgs e)

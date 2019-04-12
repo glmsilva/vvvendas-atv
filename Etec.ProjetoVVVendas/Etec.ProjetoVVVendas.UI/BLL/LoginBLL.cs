@@ -12,8 +12,16 @@ namespace Etec.ProjetoVVVendas.UI.BLL
 
         public void cadastrarLogin(Login novoLogin)
         {
-            DAO.LoginDAO login = new DAO.LoginDAO();
-            login.insertLogin(novoLogin);
+            try
+            {
+                DAO.LoginDAO login = new DAO.LoginDAO();
+                login.insertLogin(novoLogin);
+                
+            }
+            catch(Exception erro)
+            {
+                throw erro;
+            }
         }
     }
 }
